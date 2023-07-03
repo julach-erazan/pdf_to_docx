@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Index</title>
-		<link rel="stylesheet" type="text/css" href="">
-		<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
-	</head>
+<html>
+<head>
+    <title>PDF to DOCX Converter</title>
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+   
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept=".pdf" required>
+        <br>
+        <br>
+        <input type="submit" value="Convert">
+    </form>
 
-	<body>
-	
-		<h1>File Upload</h1>
-		<form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-			<input type="file" name="fileUpload" id="fileUpload">
-			<input type="submit" value="Upload">
-		</form>
-
-
-		<py-script src="pythonFile.py">
-		
-		</py-script>
-	</body>
+<py-script>
+print("Hello")
+</py-script>
+</body>
 </html>
